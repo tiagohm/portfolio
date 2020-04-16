@@ -1,136 +1,78 @@
 :root {
-    --dark-grey: #121212;
-    --text-color: #FFF;
+    --md-primary: #3700B3;
+    --md-background: #121212;
+    --md-foreground: #FFFFFF;
 }
 
 body {
-    color: var(--text-color);
-    background-color: var(--dark-grey);
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background: var(--md-background);
+    color: var(--md-foreground);
 }
 
-a {
-    color: #2196F3;
+.container {
+    padding-top: 48px;
 }
 
-.e-1 {
-    background: rgba(255, 255, 255, 0.05);
+.name {
+    font-weight: bold;
 }
 
-.e-2 {
-    background: rgba(255, 255, 255, 0.07);
+.bio {
+    font-weight: 400;
 }
 
-.text-high {
-    color: rgba(255, 255, 255, 0.87);
+.github-chart img {
+    max-width: 100%;
 }
 
-.text-medium {
-    color: rgba(255, 255, 255, 0.6);
+.avatar-box {
+    text-align: center;
 }
 
-.text-disabled {
-    color: rgba(255, 255, 255, 0.38);
-}
-
-.horizontal {
-    display: flex;
-    flex-direction: row;
-}
-
-.vertical {
-    display: flex;
-    flex-direction: column;
-}
-
-.horizontal.h-center {
-    justify-content: center;
-}
-
-.horizontal.v-center {
-    align-items: center;
-}
-
-.vertical.v-center {
-    justify-content: center;
-}
-
-.vertical.h-center {
-    align-items: center;
-}
-
-.box {
-    margin-top: 48px;
+.avatar-box img {
     width: 100%;
+    max-width: 240px;
     border-radius: 4px;
-    box-shadow: 0 2px 4px 0 rgba(16,16,16,0.16), 0 2px 2px 0 rgba(16,16,16,0.24);
 }
 
-.container .box:last-child {
-    margin-bottom: 48px;
+.subtitle {
+    text-align: center;
+    font-weight: 100;
 }
 
-.box > .row {
-    padding: 24px;
+.card {
+    margin-top: 4px;
+    background-color: var(--md-background);
+    opacity: 0.95;
+    border: 1px solid #CACACA;
 }
 
-.general .avatar {
-    width: 100%;
-    height: auto;
-    max-width: 148px;
-    max-height: 148px;
-    border-radius: 50%;
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.general .highlights h1 {
-    font-size: 28px;
+.theme-toggler {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    cursor: pointer;
 }
 
-.label {
-    display: inline-block;
-    padding: 2px 8px;
-    font-size: 10px;
-    text-transform: uppercase;
-    border-radius: 2px;
-    font-weight: bold;
+.theme-toggler .mdi {
+    font-size: 36px;
 }
 
-.label-green {
-    background-color: #4CAF50;
+.text-center {
+    text-align: center;
 }
 
-.summary > h2,
-.skills > h2,
-.projects > h2 {
-    font-size: 16px;
-    color: #4CAF50;
-}
-
-.summary > p {
-    text-align: justify;
-}
-
-.social .mdi {
+.contact-me .mdi {
     font-size: 48px;
-    padding: 8px;
-    color: #FFF;
 }
 
-.social .mdi:hover {
-    color: #4CAF50;
-}
-
-.projects .project {
-    padding: 16px;
-    margin-bottom: 2px;
-    border-radius: 2px;
-}
-
-.project .title > h2 {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.project .description {
-    font-size: 12px;
+a, a:hover {
+    text-decoration: none;
 }
